@@ -33,10 +33,7 @@
             <p>¡Encuentra tus películas, series y documentales favoritos!</p>
         </div>
     
-        <div id="search-bar">
-            <input type="text" placeholder="Buscar...">
-            <img src="./img/lupa.svg" alt="Lupa">
-        </div>
+        
     
         <div id="banner">
             <div>
@@ -47,12 +44,50 @@
             <img src="./img/mechanic_orange.png" alt="Stanley Kubrick Banner">
         </div>
         <br>
-        <!--peliculas filtro-->
 
-        <br>
-        <footer id="footer">
-            <img class="banners" src="./img/footer_banner.png" alt="">
-        </footer>
+        <div id="search-bar">
+            <input type="text" placeholder="Buscar..." oninput="searchMovies()">
+            <img src="./img/lupa.svg" alt="Lupa">
+        </div>
+        <!--peliculas filtro-->
+        <div id="movie-filter">
+            <button class="filter-button" onclick="filterMovies('Comedia')">Comedia</button>
+            <button class="filter-button" onclick="filterMovies('Drama')">Drama</button>
+            <button class="filter-button" onclick="showAllMovies()">Mostrar Todas</button>
+        </div>
+
+        <div id="movies-container">
+            <div class="movie Drama">
+                <h2>Poor things</h2>
+                <img src="./img/billi_copia.png" alt="poor_things">
+                <div class="overlay">
+                    <img class="play-icon" src="./img/play.png" alt="Reproducir">
+                </div>
+            </div>
+            <div class="movie Drama">
+                <h2>El niño y la garza</h2>
+                <img src="./img/garza.png" alt="El niño y la garza">
+                <div class="overlay">
+                    <img class="play-icon" src="./img/play.png" alt="Reproducir">
+                </div>
+            </div>
+            <div class="movie Comedia">
+                <h2>South Park</h2>
+                <img src="./img/southPark.png" alt="South Park">
+                <div class="overlay">
+                    <img class="play-icon" src="./img/play.png" alt="Reproducir">
+                </div>
+            </div>
+            <div class="movie Comedia">
+                <h2>Betty la fea</h2>
+                <img src="./img/betty.png" alt="Betty la fea">
+                <div class="overlay">
+                    <img class="play-icon" src="./img/play.png" alt="Reproducir">
+                </div>
+            </div>
+            <!-- Agrega más películas según sea necesario -->
+        </div>
+        <!--fin peliculas filtro-->
     </main>
     <script src="main.js"></script>
 </body>

@@ -9,6 +9,7 @@ body{
     display: flex;
 
 }
+
 .icons{
     width: 15px;
     height: 15px;
@@ -41,6 +42,7 @@ main{
     text-align: center;
     margin-bottom: 20px;
 }
+
 #search-bar {
     display: flex;
     align-items: center;
@@ -59,6 +61,69 @@ main{
     width: 20px;
     cursor: pointer;
 }
+
+
+#movie-filter {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    background-color: #2B0064;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.movie {
+    position: relative;
+    width: 200px;
+    text-align: center;
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.movie:hover .overlay {
+    opacity: 0.5;
+}
+
+.play-icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+}
+
 
 #banner {
     background-color: #2B0064;
