@@ -1,0 +1,23 @@
+[
+    {
+      "title": "Poor things",
+      "genre": "Drama",
+      "image": "./img/billi_copia.png"
+    },
+    {
+      "title": "El niño y la garza",
+      "genre": "Drama",
+      "image": "./img/garza.png"
+    },
+    {
+      "title": "South Park",
+      "genre": "Comedia",
+      "image": "./img/southPark.png"
+    },
+    {
+      "title": "Betty la fea",
+      "genre": "Comedia",
+      "image": "./img/betty.png"
+    }
+]
+  
